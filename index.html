@@ -9,24 +9,30 @@
 <body>
     <div class="receipt-container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
-        <h1>Receipt</h1>
-        <p class="order-info">Order Number: #1234567890</p>
+        <h1>Receipt from Apple</h1>
+        <p class="order-info">Order ID: #1234567890</p>
         <p class="date" id="date"></p>
-        
-        <div class="receipt-details" id="receipt-details">
-            <!-- Item entries will be added here -->
+
+        <div class="receipt-summary">
+            <h2>Receipt Summary</h2>
+            <p>Order Date: <span id="order-date">Loading...</span></p>
+            <p>Order Total: <span id="total-price">$0.00</span></p>
         </div>
-        
+
+        <div class="receipt-details" id="receipt-details">
+            <!-- Item entries will be dynamically added here -->
+        </div>
+
         <hr>
-        
+
         <div class="total">
             <span>Total:</span>
-            <span id="total-price">$0.00</span>
+            <span id="grand-total">$0.00</span>
         </div>
-        
+
         <button onclick="addItem()">Add Item</button>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
