@@ -9,27 +9,39 @@
 <body>
     <div class="receipt-container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
-        <h1>Receipt from Apple</h1>
-        <p class="order-info">Order ID: #1234567890</p>
-        <p class="date" id="date"></p>
-
+        
+        <h2 class="receipt-header">Your Receipt from Apple</h2>
+        <p class="order-info">Order ID: #A1234567890</p>
+        <p class="date" id="date">Date of Purchase: Loading...</p>
+        
+        <hr class="section-divider">
+        
         <div class="receipt-summary">
-            <h2>Receipt Summary</h2>
-            <p>Order Date: <span id="order-date">Loading...</span></p>
-            <p>Order Total: <span id="total-price">$0.00</span></p>
+            <div class="summary-section">
+                <p><strong>Billed To:</strong> John Doe</p>
+                <p>1234 Apple Lane</p>
+                <p>Cupertino, CA 95014</p>
+            </div>
+            <div class="summary-section">
+                <p><strong>Order Total:</strong> <span id="total-price">$0.00</span></p>
+            </div>
         </div>
+
+        <hr class="section-divider">
 
         <div class="receipt-details" id="receipt-details">
             <!-- Item entries will be dynamically added here -->
         </div>
 
-        <hr>
-
         <div class="total">
-            <span>Total:</span>
+            <span>Total Amount:</span>
             <span id="grand-total">$0.00</span>
         </div>
 
+        <hr class="section-divider">
+        
+        <p class="footer-text">Thank you for your purchase. If you have any questions, please contact Apple Support.</p>
+        
         <button onclick="addItem()">Add Item</button>
     </div>
 
