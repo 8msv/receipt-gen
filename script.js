@@ -1,4 +1,6 @@
-document.getElementById("date").innerText = `Date: ${new Date().toLocaleDateString()}`;
+// Set current date for the order
+document.getElementById("date").innerText = `Order Date: ${new Date().toLocaleDateString()}`;
+document.getElementById("order-date").innerText = new Date().toLocaleDateString();
 
 let totalPrice = 0;
 
@@ -12,6 +14,7 @@ function addItem() {
     // Update total price
     totalPrice += itemPrice;
     document.getElementById("total-price").innerText = `$${totalPrice.toFixed(2)}`;
+    document.getElementById("grand-total").innerText = `$${totalPrice.toFixed(2)}`;
 
     // Create and append the item entry
     const entry = document.createElement("div");
