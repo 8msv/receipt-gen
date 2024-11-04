@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Receipt Generator</title>
+    <title>Apple Receipt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="receipt-container">
-        <h1>Apple Receipt</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
+        <h1>Receipt</h1>
+        <p class="order-info">Order Number: #1234567890</p>
         <p class="date" id="date"></p>
-        <div id="receipt-entries">
-            <!-- Items will be added here dynamically -->
+        
+        <div class="receipt-details" id="receipt-details">
+            <!-- Item entries will be added here -->
         </div>
+        
         <hr>
+        
         <div class="total">
             <span>Total:</span>
             <span id="total-price">$0.00</span>
         </div>
+        
         <button onclick="addItem()">Add Item</button>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
