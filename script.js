@@ -1,6 +1,4 @@
-// Set current date for the order
-document.getElementById("date").innerText = `Order Date: ${new Date().toLocaleDateString()}`;
-document.getElementById("order-date").innerText = new Date().toLocaleDateString();
+document.getElementById("date").innerText = `Date of Purchase: ${new Date().toLocaleDateString()}`;
 
 let totalPrice = 0;
 
