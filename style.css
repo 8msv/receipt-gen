@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f3f3f5;
+    background-color: #ffffff; /* Straight white background */
 }
 
 .receipt-container {
@@ -26,9 +26,10 @@ body {
 }
 
 .apple-logo {
-    width: 35px;
+    width: 30px;
+    margin-bottom: 15px;
     display: block;
-    margin: 10px auto;
+    margin-left: 0; /* Position Apple logo at the top left */
 }
 
 .receipt-header {
