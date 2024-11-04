@@ -1,4 +1,4 @@
-document.getElementById("date").innerText = new Date().toLocaleDateString();
+document.getElementById("date").innerText = `Date: ${new Date().toLocaleDateString()}`;
 
 let totalPrice = 0;
 
@@ -17,5 +17,5 @@ function addItem() {
     const entry = document.createElement("div");
     entry.className = "receipt-item";
     entry.innerHTML = `<span>${itemName}</span><span>$${itemPrice.toFixed(2)}</span>`;
-    document.getElementById("receipt-entries").appendChild(entry);
+    document.getElementById("receipt-details").appendChild(entry);
 }
