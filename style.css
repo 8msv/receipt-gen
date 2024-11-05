@@ -32,6 +32,23 @@ body {
     margin-left: 0; /* Position Apple logo at the top left */
 }
 
+/* Store Information below Apple Logo */
+.store-info {
+    margin-bottom: 15px;
+}
+
+.store-location {
+    font-size: 0.9em;
+    color: #777777;
+    font-weight: bold;
+}
+
+.store-address {
+    font-size: 0.85em;
+    color: #777777;
+    margin: 0;
+}
+
 .receipt-header {
     text-align: center;
     font-size: 1.1em;
