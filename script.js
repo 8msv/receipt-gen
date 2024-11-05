@@ -1,22 +1,32 @@
-document.getElementById("date").innerText = `Date of Purchase: ${new Date().toLocaleDateString()}`;
+// Initialize current date on load
+document.getElementById("date").textContent = `Date of Purchase: ${new Date().toLocaleDateString()}`;
 
-let totalPrice = 0;
+let totalAmount = 0;
 
+// Function to add a new item to the receipt
 function addItem() {
-    // Prompt user for item details
-    const itemName = prompt("Enter item name:");
-    const itemPrice = parseFloat(prompt("Enter item price:"));
+    // Sample item details
+    const itemName = "Apple Product";
+    const itemPrice = 99.99;
 
-    if (!itemName || isNaN(itemPrice)) return alert("Invalid input. Try again.");
+    // Create a new item entry
+    const itemEntry = document.createElement("div");
+    itemEntry.className = "receipt-item";
 
-    // Update total price
-    totalPrice += itemPrice;
-    document.getElementById("total-price").innerText = `$${totalPrice.toFixed(2)}`;
-    document.getElementById("grand-total").innerText = `$${totalPrice.toFixed(2)}`;
+    const itemNameElem = document.createElement("span");
+    itemNameElem.textContent = itemName;
+    
+    const itemPriceElem = document.createElement("span");
+    itemPriceElem.textContent = `$${itemPrice.toFixed(2)}`;
 
-    // Create and append the item entry
-    const entry = document.createElement("div");
-    entry.className = "receipt-item";
-    entry.innerHTML = `<span>${itemName}</span><span>$${itemPrice.toFixed(2)}</span>`;
-    document.getElementById("receipt-details").appendChild(entry);
+    itemEntry.appendChild(itemNameElem);
+    itemEntry.appendChild(itemPriceElem);
+
+    // Add the item entry to the receipt details
+    document.getElementById("receipt-details").appendChild(itemEntry);
+
+    // Update the total amount
+    totalAmount += itemPrice;
+    document.getElementById("total-price").textContent = `$${totalAmount.toFixed(2)}`;
+    document.getElementById("grand-total").textContent = `$${totalAmount.toFixed(2)}`;
 }
