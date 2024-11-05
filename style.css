@@ -49,6 +49,13 @@ body {
     margin: 0;
 }
 
+.store-link {
+    font-size: 0.85em;
+    color: #777777;
+    margin-top: 5px;
+    word-break: break-all; /* Break link text if too long */
+}
+
 .receipt-header {
     text-align: center;
     font-size: 1.1em;
