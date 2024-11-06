@@ -1,4 +1,26 @@
-// Initialize an array to store the items and total amount
+// Display current date and time in "Month Day, Year, HH:MM AM/PM" format
+function displayDate() {
+    const dateElement = document.getElementById("purchase-date");
+    const now = new Date();
+
+    // Options for formatting the date and time
+    const options = { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric', 
+        hour: 'numeric', 
+        minute: 'numeric', 
+        hour12: true 
+    };
+
+    // Format the date and time
+    dateElement.textContent = now.toLocaleDateString('en-US', options);
+}
+
+// Call displayDate when the page loads
+window.onload = displayDate;
+
+// Initialize an array to store items and the total amount
 let items = [];
 let totalAmount = 0;
 
