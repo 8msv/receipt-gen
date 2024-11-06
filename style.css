@@ -1,123 +1,112 @@
-/* General Styles */
-* {
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
+/* General styling for the receipt container */
 body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 30px;
-    margin: 0;
-    background-color: #ffffff; /* Straight white background */
+    align-items: center;
+    height: 100vh;
 }
 
 .receipt-container {
-    width: 380px;
-    padding: 0 20px;
-    font-size: 14px;
-    color: #000000; /* Set all text color to black */
-    line-height: 1.5;
+    width: 400px;
+    padding: 20px;
+    background-color: white;
 }
 
+/* Apple logo styling */
 .apple-logo {
-    width: 30px;
-    margin-bottom: 15px;
+    width: 50px;
     display: block;
-    margin-left: 0; /* Position Apple logo at the top left */
+    margin: 0 auto 10px auto;
 }
 
-/* Store Information below Apple Logo */
+/* Store information styling */
 .store-info {
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .store-location {
-    font-size: 0.9em;
-    color: #000000;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.store-address,
-.store-link {
-    font-size: 0.85em;
-    color: #000000;
+.store-address, .store-link {
+    font-size: 14px;
     margin: 0;
-    word-break: break-all; /* Break link text if too long */
 }
 
-.receipt-header {
-    text-align: center;
-    font-size: 1.1em;
-    color: #000000;
-    margin-bottom: 8px;
-}
-
-.order-info, .date {
-    text-align: center;
-    font-size: 0.9em;
-    color: #000000;
-}
-
+/* Divider line */
 .section-divider {
-    border: 0;
-    height: 1px;
-    background: #000000;
-    margin: 15px 0;
+    border: none;
+    border-top: 3px solid black; /* Thicker line */
+    margin: 10px 0;
 }
 
+/* Receipt summary section */
 .receipt-summary {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    font-size: 14px;
+    margin: 10px 0;
 }
 
 .summary-section {
-    font-size: 0.9em;
-    color: #000000;
+    width: 45%;
 }
 
+/* Receipt details for items */
 .receipt-details {
-    padding-top: 10px;
+    margin: 20px 0;
 }
 
 .receipt-item {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
-    font-size: 0.9em;
-    color: #000000;
+    font-size: 14px;
+    padding: 5px 0;
 }
 
+/* Total section */
 .total {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 1em;
-    padding-top: 10px;
-    color: #000000;
+    font-size: 16px;
+    margin: 20px 0;
 }
 
+/* Footer text */
 .footer-text {
+    font-size: 12px;
     text-align: center;
-    font-size: 0.8em;
-    color: #000000;
-    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Input and button styles for adding items */
+input[type="text"],
+input[type="number"] {
+    width: 48%;
+    padding: 8px;
+    margin: 5px 1%;
+    font-size: 14px;
 }
 
 button {
     width: 100%;
-    margin-top: 15px;
     padding: 10px;
-    font-size: 1em;
-    color: #ffffff;
-    background-color: #007aff;
+    font-size: 16px;
+    background-color: black;
+    color: white;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #005bb5;
+    background-color: #333;
 }
