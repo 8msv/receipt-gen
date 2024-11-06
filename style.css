@@ -17,16 +17,16 @@ body {
     background-color: white;
 }
 
-/* Apple logo styling */
+/* Apple logo styling, aligned to the left */
 .apple-logo {
     width: 50px;
     display: block;
-    margin: 0 auto 10px auto;
+    margin-bottom: 10px;
 }
 
-/* Store information styling */
+/* Store information styling, aligned to the left */
 .store-info {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 
