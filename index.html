@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="receipt-container">
+        <!-- Apple logo and store information, left-aligned -->
         <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo">
         <div class="store-info">
             <p class="store-location">Apple Chadstone</p>
@@ -17,35 +18,32 @@
             <p class="store-link">https://www.apple.com/au/retail/chadstone/</p>
         </div>
         
-        <hr class="section-divider"> <!-- Thicker line here -->
+        <hr class="section-divider">
 
-        <div class="receipt-summary">
-            <div class="summary-section">
-                <p><strong>Billed To:</strong> John Doe</p>
-                <p>1234 Apple Lane</p>
-                <p>Cupertino, CA 95014</p>
-            </div>
-            <div class="summary-section">
-                <p><strong>Order Total:</strong> <span id="total-price">$0.00</span></p>
-            </div>
+        <!-- Date of Purchase section -->
+        <div class="purchase-date">
+            <p><strong>Date of Purchase:</strong> <span id="purchase-date">11/6/2024</span></p>
         </div>
 
-        <hr class="section-divider"> <!-- Thicker line here -->
+        <hr class="section-divider">
 
+        <!-- Receipt details for items added -->
         <div class="receipt-details" id="receipt-details">
             <!-- Item entries will be dynamically added here -->
         </div>
 
+        <!-- Total section -->
         <div class="total">
             <span>Total Amount:</span>
             <span id="grand-total">$0.00</span>
         </div>
 
-        <hr class="section-divider"> <!-- Thicker line here -->
+        <hr class="section-divider">
         
+        <!-- Footer text -->
         <p class="footer-text">Thank you for your purchase. If you have any questions, please contact Apple Support.</p>
         
-        <!-- Inputs for adding item details -->
+        <!-- Input fields and button for adding items -->
         <input type="text" id="product-name" placeholder="Product Name" />
         <input type="number" id="product-price" placeholder="Product Price" step="0.01" />
 
